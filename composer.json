@@ -34,7 +34,9 @@
         "lunetics/locale-bundle": "~2.3",
         "twbs/bootstrap-sass": "~3.3",
         "twbs/bootstrap": "~3.3",
-        "jms/debugging-bundle": "dev-master"
+        "jms/debugging-bundle": "dev-master",
+        "elao/web-profiler-extra-bundle": "dev-master",
+        "jms/aop-bundle": "~1.0"
 		
 		
 		

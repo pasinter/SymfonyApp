@@ -17,7 +17,9 @@ framework:
         #assets_version: SomeVersionScheme
     default_locale:  "%locale%"
     trusted_proxies: ~
-    session:         ~
+    session:
+        save_path: "%kernel.root_dir%/sessions/"
+        cookie_lifetime: 1800
     fragments:       ~
     http_method_override: true
 
@@ -33,11 +35,18 @@ assetic:
     bundles:        [ ]
     #java: /usr/bin/java
     filters:
+        sass:
+            sass: %sass_exe%
+            apply_to: "\.sass$"
+        scss:
+            #sass: /usr/local/bin/sass
+            sass: %sass_exe%
+            apply_to: "\.scss$"    
         cssrewrite: ~
         #closure:
         #    jar: "%kernel.root_dir%/Resources/java/compiler.jar"
-        #yui_css:
-        #    jar: "%kernel.root_dir%/Resources/java/yuicompressor-2.4.7.jar"
+        yui_css:
+            jar: "%kernel.root_dir%/Resources/java/yuicompressor-2.4.7.jar"
 
 # Doctrine Configuration
 doctrine:
@@ -67,3 +76,104 @@ swiftmailer:
     username:  "%mailer_user%"
     password:  "%mailer_password%"
     spool:     { type: memory }
+	
+	
+	
+sonata_block:
+    default_contexts: [cms]
+    blocks:
+        sonata.admin.block.admin_list:
+            contexts:   [admin]
+
+        sonata.block.service.text:
+        sonata.block.service.action:
+        sonata.block.service.rss:
+		
+		
+		
+knp_menu:
+    twig:  # use "twig: false" to disable the Twig extension and the TwigRenderer
+        template: knp_menu.html.twig
+    templating: false # if true, enables the helper for PHP templates
+    default_renderer: twig # The renderer to use, list is also available by default
+    providers:
+        builder_alias: true    # disable the builder-based provider
+        container_aware: true   # keep this one enabled. Can be omitted as it is the default
+
+
+mopa_bootstrap:
+
+    form: 
+        # removes (optional) in labels of non-required fields
+        render_optional_text: false
+        templating:           PasinterAngularJSBundle:Form:fields.html.twig
+    menu: ~  # enables twig helpers for menu
+    initializr:
+        meta:
+            title:        "MetaCloud"
+            description:  "MetaCloud"
+            keywords:     "MetaCloud, clouds"
+            author_name:  "MetaCloud"
+        dns_prefetch:
+              - '//ajax.googleapis.com'
+              - '//fonts.googleapis.com'
+              - '//netdna.bootstrapcdn.com'
+        google:
+            wt: 'MXv4fzQSi_m-ILBzqxElZEmi9sIzQdTbLyUAgPw5X2A'
+            analytics: 'UA-37751293-1'
+        #diagnostic_mode: true
+
+
+		
+sonata_admin:
+    templates:
+        layout:     MetaCloudAdminPagesBundle::standard_layout.html.twig
+    security:
+        handler:    sonata.admin.security.handler.noop
+
+
+liip_imagine:
+    resolvers:
+       default:
+          web_path: ~
+
+    filter_sets:
+        cache: ~
+        runtime:
+            quality: 85
+            filters:
+                thumbnail: { size: [280], mode: outbound }
+        pageHeader:
+            quality: 85
+            filters:
+                thumbnail: { size: [280], mode: outbound }
+        cloud_account_logos:
+            quality: 85
+            filters:
+                thumbnail: { size: [50, 50], mode: outbound }
+
+
+
+stof_doctrine_extensions:
+    mongodb:
+        default:
+            softdeleteable: true
+			
+			
+lunetics_locale:
+  strict_mode: true
+  allowed_locales:
+    - fr
+    - en
+  guessing_order:
+    - query
+    - router
+    - session
+    - cookie
+    - browser
+  cookie:
+    set_on_change: true
+    ttl: 300000
+
+jms_security_extra:
+  expressions: true
