@@ -1,2 +1,2 @@
-FilmProductionCo
+Standard Symfony App
 ================
