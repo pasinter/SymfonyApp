@@ -16,35 +16,44 @@ class AppKernel extends Kernel
             new Symfony\Bundle\AsseticBundle\AsseticBundle(),
             new Doctrine\Bundle\DoctrineBundle\DoctrineBundle(),
             new Sensio\Bundle\FrameworkExtraBundle\SensioFrameworkExtraBundle(),
-			
-			
-			// sonata
+            
+            // FOS
+            new FOS\UserBundle\FOSUserBundle(),
+            new FOS\RestBundle\FOSRestBundle(),
+            
+            // sonata
             new Sonata\CoreBundle\SonataCoreBundle(),
             new Sonata\EasyExtendsBundle\SonataEasyExtendsBundle(),
             new Sonata\AdminBundle\SonataAdminBundle(),
             new Sonata\BlockBundle\SonataBlockBundle(),
             new Sonata\NotificationBundle\SonataNotificationBundle(),
             new Sonata\IntlBundle\SonataIntlBundle(),
+            new Sonata\UserBundle\SonataUserBundle('FOSUserBundle'),
             
             // images
             new Liip\ImagineBundle\LiipImagineBundle(),
             
-			
-			// twitter bootstrap etc
+            // twitter bootstrap etc
             new Mopa\Bundle\BootstrapBundle\MopaBootstrapBundle(),
             new Knp\Bundle\PaginatorBundle\KnpPaginatorBundle(),
-			new Knp\Bundle\MenuBundle\KnpMenuBundle(),
+            new Knp\Bundle\MenuBundle\KnpMenuBundle(),
 			
-			// Doctrine behaviours
+            // Doctrine behaviours
             new Stof\DoctrineExtensionsBundle\StofDoctrineExtensionsBundle(),
-			
-			// locale
+
+            // locale
             new Lunetics\LocaleBundle\LuneticsLocaleBundle(),
-			
-			// Security
+
+            // Security
             new JMS\AopBundle\JMSAopBundle(),
             new JMS\SecurityExtraBundle\JMSSecurityExtraBundle(),
             new JMS\DiExtraBundle\JMSDiExtraBundle($this),
+            
+            
+            // Serializer
+            new JMS\SerializerBundle\JMSSerializerBundle(),
+            
+            // Default App Bundles
             new Pasinter\FrontendBundle\PasinterFrontendBundle(),
             new Pasinter\BackendBundle\PasinterBackendBundle(),
             new Pasinter\CoreBundle\PasinterCoreBundle(),
@@ -56,7 +65,7 @@ class AppKernel extends Kernel
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {
             $bundles[] = new Symfony\Bundle\WebProfilerBundle\WebProfilerBundle();
-			$bundles[] = new Elao\WebProfilerExtraBundle\WebProfilerExtraBundle();
+            $bundles[] = new Elao\WebProfilerExtraBundle\WebProfilerExtraBundle();
             $bundles[] = new Sensio\Bundle\DistributionBundle\SensioDistributionBundle();
             $bundles[] = new Sensio\Bundle\GeneratorBundle\SensioGeneratorBundle();
         }
