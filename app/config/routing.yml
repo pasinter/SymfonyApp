@@ -1,0 +1,25 @@
+pasinter_api:
+    resource: "@PasinterApiBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
+pasinter_account:
+    resource: "@PasinterAccountBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
+pasinter_core:
+    resource: "@PasinterCoreBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
+pasinter_backend:
+    resource: "@PasinterBackendBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
+pasinter_frontend:
+    resource: "@PasinterFrontendBundle/Controller/"
+    type:     annotation
+    prefix:   /
+

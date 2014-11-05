@@ -45,6 +45,11 @@ class AppKernel extends Kernel
             new JMS\AopBundle\JMSAopBundle(),
             new JMS\SecurityExtraBundle\JMSSecurityExtraBundle(),
             new JMS\DiExtraBundle\JMSDiExtraBundle($this),
+            new Pasinter\FrontendBundle\PasinterFrontendBundle(),
+            new Pasinter\BackendBundle\PasinterBackendBundle(),
+            new Pasinter\CoreBundle\PasinterCoreBundle(),
+            new Pasinter\AccountBundle\PasinterAccountBundle(),
+            new Pasinter\ApiBundle\PasinterApiBundle(),
         );
 		
 

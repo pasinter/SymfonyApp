@@ -16,7 +16,7 @@ security:
             memory:
                 users:
                     #user:  { password: userpass, roles: [ 'ROLE_USER' ] }
-                    admin: { password: 32utjherg, roles: [ 'ROLE_ADMIN' ] }
+                    ken: { password: 32utjherg, roles: [ 'ROLE_SUPER_ADMIN' ] }
 
     firewalls:
         dev:
@@ -24,36 +24,29 @@ security:
             security: false
 
         login:
-            pattern:  ^/demo/secured/login$
+            pattern:    ^/login$
             security: false
-
-        secured_area:
-            pattern:    ^/demo/secured/
-            login:
-                pattern:    ^/login$
-                security:      false
+            
+        admin:
+            pattern:    ^/admin
+            anonymous:  ~
+            http_basic:
+                realm:      "Admin"
+                provider:   in_memory
+                
+        account_area:
+            pattern:    ^/account
+            context:    site
+            anonymous:  ~
+            form_login:
+                login_path:             login
+                check_path:             /account/login_check
+                default_target_path:    /account
+                use_referer:            true
             logout:
-                path:   _demo_logout
-                target: _demo
-            admin:
-                pattern:    ^/admin
-                anonymous:  ~
-                http_basic:
-                    realm:      "Admin"
-                    provider:   in_memory
-            account_area:
-                pattern:    ^/account
-                context:    site
-                anonymous:  ~
-                form_login:
-                    login_path:             login
-                    check_path:             /account/login_check
-                    default_target_path:    /account
-                    use_referer:            true
-                logout:
-                    path:       /account/logout
-                    target:     homepage
-                    #handlers:   [metacloud.connection_log_listener]
+                path:       /account/logout
+                target:     homepage
+                #handlers:   [metacloud.connection_log_listener]
 
     access_control:
         - { path: ^/account/edit, roles: [ROLE_ORG_USER_ACTIVE, IS_AUTHENTICATED_FULLY] }
