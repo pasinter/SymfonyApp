@@ -68,3 +68,6 @@ security:
         - { path: ^/account, roles: [ROLE_USER] }
         
         - { path: ^/, roles: IS_AUTHENTICATED_ANONYMOUSLY }
+
+    acl:
+        connection: default
