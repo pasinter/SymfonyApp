@@ -76,9 +76,9 @@ swiftmailer:
     username:  "%mailer_user%"
     password:  "%mailer_password%"
     spool:     { type: memory }
-	
-	
-	
+
+
+
 sonata_block:
     default_contexts: [cms]
     blocks:
@@ -88,9 +88,9 @@ sonata_block:
         sonata.block.service.text:
         sonata.block.service.action:
         sonata.block.service.rss:
-		
-		
-		
+
+
+
 knp_menu:
     twig:  # use "twig: false" to disable the Twig extension and the TwigRenderer
         template: knp_menu.html.twig
@@ -106,7 +106,7 @@ mopa_bootstrap:
     form: 
         # removes (optional) in labels of non-required fields
         render_optional_text: false
-        templating:           PasinterAngularJSBundle:Form:fields.html.twig
+        #templating:           PasinterAngularJSBundle:Form:fields.html.twig
     menu: ~  # enables twig helpers for menu
     initializr:
         meta:
@@ -124,10 +124,8 @@ mopa_bootstrap:
         #diagnostic_mode: true
 
 
-		
+
 sonata_admin:
-    templates:
-        layout:     MetaCloudAdminPagesBundle::standard_layout.html.twig
     security:
         handler:    sonata.admin.security.handler.noop
 
@@ -155,11 +153,11 @@ liip_imagine:
 
 
 stof_doctrine_extensions:
-    mongodb:
+    orm:
         default:
             softdeleteable: true
-			
-			
+
+
 lunetics_locale:
   strict_mode: true
   allowed_locales:

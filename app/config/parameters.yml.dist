@@ -17,4 +17,8 @@ parameters:
     locale:            en
 
     # A secret key that's used to generate certain security-related tokens
-    secret:            ThisTokenIsNotSoSecretChangeIt
+    secret:            230sergers1bsdf349
+
+    ruby_exe: C:\Ruby187\bin\ruby
+    sass_exe: C:\Ruby187\bin\sass
+    locales: (en|fr)

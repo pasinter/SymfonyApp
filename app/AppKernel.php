@@ -22,11 +22,9 @@ class AppKernel extends Kernel
             new Sonata\CoreBundle\SonataCoreBundle(),
             new Sonata\EasyExtendsBundle\SonataEasyExtendsBundle(),
             new Sonata\AdminBundle\SonataAdminBundle(),
-            //new Sonata\DoctrineMongoDBAdminBundle\SonataDoctrineMongoDBAdminBundle(),
             new Sonata\BlockBundle\SonataBlockBundle(),
-            new Sonata\CacheBundle\SonataCacheBundle(),
             new Sonata\NotificationBundle\SonataNotificationBundle(),
-			new Sonata\IntlBundle\SonataIntlBundle(),
+            new Sonata\IntlBundle\SonataIntlBundle(),
             
             // images
             new Liip\ImagineBundle\LiipImagineBundle(),

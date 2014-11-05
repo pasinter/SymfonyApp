@@ -1,5 +1,10 @@
 security:
     encoders:
+        Pasinter\CoreBundle\Entity\User:
+            algorithm: sha256
+            encode_as_base64: false
+            iterations: 1
+
         Symfony\Component\Security\Core\User\User: plaintext
 
     role_hierarchy:
@@ -10,8 +15,8 @@ security:
         in_memory:
             memory:
                 users:
-                    user:  { password: userpass, roles: [ 'ROLE_USER' ] }
-                    admin: { password: adminpass, roles: [ 'ROLE_ADMIN' ] }
+                    #user:  { password: userpass, roles: [ 'ROLE_USER' ] }
+                    admin: { password: 32utjherg, roles: [ 'ROLE_ADMIN' ] }
 
     firewalls:
         dev:
@@ -24,16 +29,34 @@ security:
 
         secured_area:
             pattern:    ^/demo/secured/
-            form_login:
-                check_path: _security_check
-                login_path: _demo_login
+            login:
+                pattern:    ^/login$
+                security:      false
             logout:
                 path:   _demo_logout
                 target: _demo
-            #anonymous: ~
-            #http_basic:
-            #    realm: "Secured Demo Area"
+            admin:
+                pattern:    ^/admin
+                anonymous:  ~
+                http_basic:
+                    realm:      "Admin"
+                    provider:   in_memory
+            account_area:
+                pattern:    ^/account
+                context:    site
+                anonymous:  ~
+                form_login:
+                    login_path:             login
+                    check_path:             /account/login_check
+                    default_target_path:    /account
+                    use_referer:            true
+                logout:
+                    path:       /account/logout
+                    target:     homepage
+                    #handlers:   [metacloud.connection_log_listener]
 
     access_control:
-        - { path: ^/demo/secured/hello/admin/, roles: ROLE_ADMIN }
-        #- { path: ^/login, roles: IS_AUTHENTICATED_ANONYMOUSLY, requires_channel: https }
+        - { path: ^/account/edit, roles: [ROLE_ORG_USER_ACTIVE, IS_AUTHENTICATED_FULLY] }
+        - { path: ^/account, roles: [ROLE_ORG_USER] }
+        - { path: ^/admin, roles: ROLE_SUPER_ADMIN }
+        - { path: ^/, roles: IS_AUTHENTICATED_ANONYMOUSLY }
