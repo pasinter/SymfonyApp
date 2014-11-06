@@ -22,6 +22,7 @@ Standard Symfony App
 
 
 TODO:
+* Include angularjs & jquery
 * Enquiries entity & admin
 * CMS
 * Site settings admin: facebook/linkedin, email, phone, company name, copyright message
