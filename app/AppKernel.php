@@ -31,6 +31,10 @@ class AppKernel extends Kernel
             new Sonata\IntlBundle\SonataIntlBundle(),
             new Sonata\UserBundle\SonataUserBundle('FOSUserBundle'),
             
+            new Application\Sonata\UserBundle\ApplicationSonataUserBundle(),
+
+            new Nelmio\ApiDocBundle\NelmioApiDocBundle(),
+            
             // images
             new Liip\ImagineBundle\LiipImagineBundle(),
             
