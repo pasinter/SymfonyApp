@@ -18,3 +18,15 @@ Standard Symfony App
 * StofDoctrineExtensionsBundles
 * LuneticsLocaleBundle
 * JMSSerializerBundle
+
+
+
+TODO:
+* Enquiries entity & admin
+* CMS
+* Site settings admin: facebook/linkedin, email, phone, company name, copyright message
+* User sign in logs
+* Header nav bar : contact, register, login user | hello user
+* footer - TOS link, contact link, copyright message
+* Enquiry form with captcha & contact details page & fixture 
+* TOS page fixture
