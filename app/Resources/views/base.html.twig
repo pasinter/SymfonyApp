@@ -1,13 +1,11 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8" />
-        <title>{% block title %}Welcome!{% endblock %}</title>
-        {% block stylesheets %}{% endblock %}
-        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
-    </head>
-    <body>
-        {% block body %}{% endblock %}
-        {% block javascripts %}{% endblock %}
-    </body>
-</html>
+{% extends 'MopaBootstrapBundle::base.html.twig' %}
+
+{% block title %}Symfony App{% endblock %}
+
+
+{% block headline %}AngularJS Symfony App Distribution{% endblock headline %}
+
+
+{% block footer %}
+<p>&copy; <a href="https://github.com/pasinter/SymfonyApp" target="_blank">AngularJS Symfony App Distribution</a> 2014</p>
+{% endblock footer %}

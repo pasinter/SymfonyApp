@@ -103,7 +103,6 @@ knp_menu:
 
 
 mopa_bootstrap:
-
     form: 
         # removes (optional) in labels of non-required fields
         render_optional_text: false

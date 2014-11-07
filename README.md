@@ -1,7 +1,8 @@
-Standard Symfony App
+Rad Symfony Edition
 ================
 
-
+Pre-installed bundles
+_______
 * FOSUserBundle
 * FOSRestBundle
 * SonataAdminBundle
@@ -13,11 +14,16 @@ Standard Symfony App
 * JmsAopBundle
 * JmsSecurityExtraBundle
 * MopaBootstrapBundle
-* Twitter Bootstrap & SASS
 * LiipImagineBundle
 * StofDoctrineExtensionsBundles
 * LuneticsLocaleBundle
 * JMSSerializerBundle
+
+Front End
+___
+* Twitter Bootstrap & SASS
+* Angularjs
+* jQuery
 
 
 
