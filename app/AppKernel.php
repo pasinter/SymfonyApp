@@ -30,8 +30,13 @@ class AppKernel extends Kernel
             new Sonata\NotificationBundle\SonataNotificationBundle(),
             new Sonata\IntlBundle\SonataIntlBundle(),
             new Sonata\UserBundle\SonataUserBundle('FOSUserBundle'),
+            new Sonata\SeoBundle\SonataSeoBundle(),
+            new Sonata\PageBundle\SonataPageBundle(),
             
             new Application\Sonata\UserBundle\ApplicationSonataUserBundle(),
+            new Application\Sonata\PageBundle\ApplicationSonataPageBundle(),
+            
+            new Sonata\CacheBundle\SonataCacheBundle(),
 
             new Nelmio\ApiDocBundle\NelmioApiDocBundle(),
             
