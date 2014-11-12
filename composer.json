@@ -39,7 +39,8 @@
         "friendsofsymfony/user-bundle": "~1.3",
         "jms/serializer-bundle": "~0.13",
         "nelmio/api-doc-bundle": "~2.7",
-        "doctrine/doctrine-fixtures-bundle": "~2.2"
+        "doctrine/doctrine-fixtures-bundle": "~2.2",
+        "friendsofsymfony/message-bundle": "~1.2"
 		
 		
 		

@@ -57,6 +57,9 @@ sonata_api_user:
     prefix:       /api/user
     resource:     "@SonataUserBundle/Resources/config/routing/api.xml"
     
+fos_message:
+    resource: "@FOSMessageBundle/Resources/config/routing.xml"
+    prefix: /optional_routing_prefix
     
 admin:
     resource: '@SonataAdminBundle/Resources/config/routing/sonata_admin.xml'

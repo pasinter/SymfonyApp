@@ -18,6 +18,7 @@ _______
 * StofDoctrineExtensionsBundles
 * LuneticsLocaleBundle
 * JMSSerializerBundle
+* FOSMessageBundle
 
 Front End
 ___
@@ -37,3 +38,9 @@ TODO:
 * footer - TOS link, contact link, copyright message
 * Enquiry form with captcha & contact details page & fixture 
 * TOS page fixture
+* OrnicarGravatarBundle
+* OroCRM ? 
+* GenemuFormBundle
+* IgorwFileServeBundle
+* APYJsFormValidationBundle
+* FpJsFormValidatorBundle ?

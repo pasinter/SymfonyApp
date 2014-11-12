@@ -230,3 +230,13 @@ sensio_framework_extra:
 twig:
     exception_controller: 'FOS\RestBundle\Controller\ExceptionController::showAction'
     
+
+fos_message:
+    db_driver: orm
+    thread_class: Pasinter\CoreBundle\Entity\Thread
+    message_class: Pasinter\CoreBundle\Entity\Message
+    new_thread_form:
+      type:               fos_message.new_thread_multiple_form.type
+      handler:            fos_message.new_thread_multiple_form.handler
+      model:              FOS\MessageBundle\FormModel\NewThreadMultipleMessage
+      name:               message

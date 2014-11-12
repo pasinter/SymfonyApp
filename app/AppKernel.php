@@ -20,6 +20,7 @@ class AppKernel extends Kernel
             // FOS
             new FOS\UserBundle\FOSUserBundle(),
             new FOS\RestBundle\FOSRestBundle(),
+            new FOS\MessageBundle\FOSMessageBundle(),
             
             // sonata
             new Sonata\CoreBundle\SonataCoreBundle(),
