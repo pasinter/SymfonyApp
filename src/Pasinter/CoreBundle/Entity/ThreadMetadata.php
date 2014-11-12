@@ -57,7 +57,7 @@ class ThreadMetadata extends BaseThreadMetadata
      * @param \Pasinter\CoreBundle\Entity\Thread $thread
      * @return ThreadMetadata
      */
-    public function setThread(\Pasinter\CoreBundle\Entity\Thread $thread = null)
+    public function setThread(\FOS\MessageBundle\Model\ThreadInterface $thread = null)
     {
         $this->thread = $thread;
 
@@ -80,7 +80,7 @@ class ThreadMetadata extends BaseThreadMetadata
      * @param \Pasinter\CoreBundle\Entity\User $participant
      * @return ThreadMetadata
      */
-    public function setParticipant(\Pasinter\CoreBundle\Entity\User $participant = null)
+    public function setParticipant(\FOS\MessageBundle\Model\ParticipantInterface $participant = null)
     {
         $this->participant = $participant;
 

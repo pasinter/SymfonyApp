@@ -100,7 +100,7 @@ class Thread extends BaseThread
      * @param \Pasinter\CoreBundle\Entity\Message $messages
      * @return Thread
      */
-    public function addMessage(\Pasinter\CoreBundle\Entity\Message $messages)
+    public function addMessage(\FOS\MessageBundle\Model\MessageInterface $messages)
     {
         $this->messages[] = $messages;
 
@@ -112,7 +112,7 @@ class Thread extends BaseThread
      *
      * @param \Pasinter\CoreBundle\Entity\Message $messages
      */
-    public function removeMessage(\Pasinter\CoreBundle\Entity\Message $messages)
+    public function removeMessage(\FOS\MessageBundle\Model\MessageInterface $messages)
     {
         $this->messages->removeElement($messages);
     }
