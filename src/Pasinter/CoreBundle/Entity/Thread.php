@@ -28,14 +28,14 @@ class Thread extends BaseThread
     protected $id;
 
     /**
-     * @ORM\ManyToOne(targetEntity="Acme\UserBundle\Entity\User")
+     * @ORM\ManyToOne(targetEntity="Pasinter\CoreBundle\Entity\User")
      * @var \FOS\MessageBundle\Model\ParticipantInterface
      */
     protected $createdBy;
 
     /**
      * @ORM\OneToMany(
-     *   targetEntity="Acme\MessageBundle\Entity\Message",
+     *   targetEntity="Pasinter\CoreBundle\Entity\Message",
      *   mappedBy="thread"
      * )
      * @var Message[]|\Doctrine\Common\Collections\Collection
@@ -44,7 +44,7 @@ class Thread extends BaseThread
 
     /**
      * @ORM\OneToMany(
-     *   targetEntity="Acme\MessageBundle\Entity\ThreadMetadata",
+     *   targetEntity="Pasinter\CoreBundle\Entity\ThreadMetadata",
      *   mappedBy="thread",
      *   cascade={"all"}
      * )

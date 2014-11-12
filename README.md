@@ -44,3 +44,5 @@ TODO:
 * IgorwFileServeBundle
 * APYJsFormValidationBundle
 * FpJsFormValidatorBundle ?
+* SonataClassificationBundle 
+* SonataMediaBundle 
