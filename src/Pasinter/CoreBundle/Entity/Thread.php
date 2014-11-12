@@ -14,6 +14,7 @@ namespace Pasinter\CoreBundle\Entity;
 use Doctrine\ORM\Mapping as ORM;
 use Doctrine\Common\Collections\ArrayCollection;
 use FOS\MessageBundle\Entity\Thread as BaseThread;
+use FOS\MessageBundle\Model\ParticipantInterface;
 
 /**
  * @ORM\Entity
@@ -73,10 +74,10 @@ class Thread extends BaseThread
     /**
      * Set createdBy
      *
-     * @param \Pasinter\CoreBundle\Entity\User $createdBy
+     * @param \FOS\MessageBundle\Model\ParticipantInterface $createdBy
      * @return Thread
      */
-    public function setCreatedBy(\Pasinter\CoreBundle\Entity\User $createdBy = null)
+    public function setCreatedBy(ParticipantInterface $createdBy = null)
     {
         $this->createdBy = $createdBy;
 
@@ -86,7 +87,7 @@ class Thread extends BaseThread
     /**
      * Get createdBy
      *
-     * @return \Pasinter\CoreBundle\Entity\User 
+     * @return \FOS\MessageBundle\Model\ParticipantInterface
      */
     public function getCreatedBy()
     {
