@@ -1,7 +1,8 @@
-Standard Symfony App
+Rad Symfony Edition
 ================
 
-
+Pre-installed bundles
+_______
 * FOSUserBundle
 * FOSRestBundle
 * SonataAdminBundle
@@ -13,11 +14,19 @@ Standard Symfony App
 * JmsAopBundle
 * JmsSecurityExtraBundle
 * MopaBootstrapBundle
-* Twitter Bootstrap & SASS
 * LiipImagineBundle
 * StofDoctrineExtensionsBundles
 * LuneticsLocaleBundle
 * JMSSerializerBundle
+* FOSMessageBundle
+* SonataClassificationBundle 
+* SonataMediaBundle 
+
+Front End
+___
+* Twitter Bootstrap & SASS
+* Angularjs
+* jQuery
 
 
 
@@ -31,6 +40,7 @@ TODO:
 * footer - TOS link, contact link, copyright message
 * Enquiry form with captcha & contact details page & fixture 
 * TOS page fixture
+
 * jms/translation-bundle
 * hwi/oauth-bundle
 * knplabs/knp-gaufrette-bundle
@@ -38,4 +48,10 @@ TODO:
 * WhiteOctoberPagerfantaBundle ?
 * willdurand/hateoas-bundle
 * friendsofsymfony/oauth-server-bundle ?
-
+* OrnicarGravatarBundle
+* OroCRM ? 
+* GenemuFormBundle
+* IgorwFileServeBundle
+* APYJsFormValidationBundle
+* FpJsFormValidatorBundle ?
+* SpyTimelineBundle ?

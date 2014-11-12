@@ -20,6 +20,7 @@ class AppKernel extends Kernel
             // FOS
             new FOS\UserBundle\FOSUserBundle(),
             new FOS\RestBundle\FOSRestBundle(),
+            new FOS\MessageBundle\FOSMessageBundle(),
             
             // sonata
             new Sonata\CoreBundle\SonataCoreBundle(),
@@ -30,13 +31,20 @@ class AppKernel extends Kernel
             new Sonata\NotificationBundle\SonataNotificationBundle(),
             new Sonata\IntlBundle\SonataIntlBundle(),
             new Sonata\UserBundle\SonataUserBundle('FOSUserBundle'),
+
             new Sonata\SeoBundle\SonataSeoBundle(),
             new Sonata\PageBundle\SonataPageBundle(),
             
-            new Application\Sonata\UserBundle\ApplicationSonataUserBundle(),
             new Application\Sonata\PageBundle\ApplicationSonataPageBundle(),
             
             new Sonata\CacheBundle\SonataCacheBundle(),
+            new Sonata\MediaBundle\SonataMediaBundle(),
+            new Sonata\ClassificationBundle\SonataClassificationBundle(),
+            
+            new Application\Sonata\ClassificationBundle\ApplicationSonataClassificationBundle(),
+            
+            new Application\Sonata\UserBundle\ApplicationSonataUserBundle(),
+            new Application\Sonata\MediaBundle\ApplicationSonataMediaBundle(),
 
             new Nelmio\ApiDocBundle\NelmioApiDocBundle(),
             
