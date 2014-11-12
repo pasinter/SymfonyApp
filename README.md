@@ -19,6 +19,8 @@ _______
 * LuneticsLocaleBundle
 * JMSSerializerBundle
 * FOSMessageBundle
+* SonataClassificationBundle 
+* SonataMediaBundle 
 
 Front End
 ___
@@ -44,5 +46,4 @@ TODO:
 * IgorwFileServeBundle
 * APYJsFormValidationBundle
 * FpJsFormValidatorBundle ?
-* SonataClassificationBundle 
-* SonataMediaBundle 
+* SpyTimelineBundle ?

@@ -40,4 +40,60 @@ class ThreadMetadata extends BaseThreadMetadata
      * @var \FOS\MessageBundle\Model\ParticipantInterface
      */
     protected $participant;
+
+    /**
+     * Get id
+     *
+     * @return integer 
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    /**
+     * Set thread
+     *
+     * @param \Pasinter\CoreBundle\Entity\Thread $thread
+     * @return ThreadMetadata
+     */
+    public function setThread(\Pasinter\CoreBundle\Entity\Thread $thread = null)
+    {
+        $this->thread = $thread;
+
+        return $this;
+    }
+
+    /**
+     * Get thread
+     *
+     * @return \Pasinter\CoreBundle\Entity\Thread 
+     */
+    public function getThread()
+    {
+        return $this->thread;
+    }
+
+    /**
+     * Set participant
+     *
+     * @param \Pasinter\CoreBundle\Entity\User $participant
+     * @return ThreadMetadata
+     */
+    public function setParticipant(\Pasinter\CoreBundle\Entity\User $participant = null)
+    {
+        $this->participant = $participant;
+
+        return $this;
+    }
+
+    /**
+     * Get participant
+     *
+     * @return \Pasinter\CoreBundle\Entity\User 
+     */
+    public function getParticipant()
+    {
+        return $this->participant;
+    }
 }
