@@ -103,7 +103,6 @@ knp_menu:
 
 
 mopa_bootstrap:
-
     form: 
         # removes (optional) in labels of non-required fields
         render_optional_text: false
@@ -238,6 +237,8 @@ sonata_page:
     ignore_route_patterns:
         - ^(.*)admin(.*)   # ignore admin route, ie route containing 'admin'
         - ^_(.*)          # ignore symfony routes
+        - ^sonata_api(.*)
+        - ^pasinter_api(.*)
 
     ignore_routes:
         - sonata_page_esi_cache
@@ -249,16 +250,51 @@ sonata_page:
         - sonata_cache_js_async
         - sonata_cache_js_sync
         - sonata_cache_apc
+        - sonata_user_security_check
 
     ignore_uri_patterns:
         - ^/admin\/   # ignore admin route, ie route containing 'admin'
+        - ^/api\/   # ignore api routes
+        - ^/login
 
     page_defaults:
         homepage: {decorate: false} # disable decoration for homepage, key - is a page route
 
     default_template: default # template key from templates section, used as default for pages
     templates:
-        default: {path: 'SonataPageBundle::layout.html.twig', name: default }
+        default: 
+            #path: 'SonataPageBundle::layout.html.twig'
+            path: 'PasinterFrontendBundle::layout.html.twig'
+            name: default 
+            containers:
+                header:
+                    name: Header
+                content_top:
+                    name: Top content
+                content:
+                    name: Main content
+                content_bottom:
+                    name: Bottom content
+                footer:
+                    name: Footer
+            matrix:
+                layout: |
+
+                    HHHHHHHH
+                    TTTTTTTT
+                    TTTTTTTT
+                    CCCCCCCC
+                    CCCCCCCC
+                    BBBBBBBB
+                    BBBBBBBB
+                    FFFFFFFF
+
+                mapping:
+                  H: header
+                  T: content_top
+                  C: content
+                  B: content_bottom
+                  F: footer
 
     # manage the http errors
     catch_exceptions:

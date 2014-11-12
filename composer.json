@@ -43,7 +43,8 @@
         "doctrine/doctrine-fixtures-bundle": "~2.2",
         "sonata-project/page-bundle": "~2.3",
         "sonata-project/cache-bundle": "~2.2",
-        "sonata-project/datagrid-bundle": "2.2.*@dev"
+        "sonata-project/datagrid-bundle": "2.2.*@dev",
+        "craue/formflow-bundle": "~2.1"
 		
 		
 		

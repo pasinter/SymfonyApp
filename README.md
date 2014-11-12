@@ -31,3 +31,11 @@ TODO:
 * footer - TOS link, contact link, copyright message
 * Enquiry form with captcha & contact details page & fixture 
 * TOS page fixture
+* jms/translation-bundle
+* hwi/oauth-bundle
+* knplabs/knp-gaufrette-bundle
+* knplabs/knp-snappy-bundle
+* WhiteOctoberPagerfantaBundle ?
+* willdurand/hateoas-bundle
+* friendsofsymfony/oauth-server-bundle ?
+

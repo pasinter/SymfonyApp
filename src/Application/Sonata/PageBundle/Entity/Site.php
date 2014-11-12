@@ -19,7 +19,7 @@ use Sonata\PageBundle\Entity\BaseSite as BaseSite;
  * References :
  *   working with object : http://www.doctrine-project.org/projects/orm/2.0/docs/reference/working-with-objects/en
  *
- * @author <yourname> <youremail>
+ * @author pasinter
  */
 class Site extends BaseSite
 {
