@@ -12,4 +12,5 @@
 /composer.phar
 /nbproject/private/
 /nbproject
+/src/Pasinter/CoreBundle/Entity/*.php~
 composer.lock
