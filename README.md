@@ -66,3 +66,4 @@ TODO:
 * prezent/doctrine-translatable-bundle ?
 * ArgentumTranslationBundle ?
 * LexikTranslationBundle ?
+* Sitemap generation using SonataSeoBundle
