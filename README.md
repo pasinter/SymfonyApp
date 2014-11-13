@@ -1,8 +1,8 @@
 Rad Symfony Edition
 ================
 
-Pre-installed bundles
 _______
+Pre-installed bundles
 * FOSUserBundle
 * FOSRestBundle
 * SonataAdminBundle
@@ -21,15 +21,21 @@ _______
 * FOSMessageBundle
 * SonataClassificationBundle 
 * SonataMediaBundle 
+* GenemuFormBundle
 
-Front End
 ___
+Front End
 * Twitter Bootstrap & SASS
 * Angularjs
 * jQuery
 
+___
+Content fixtures:
+* Home Page
+* TOS page (todo)
+* Contact details page (todo)
 
-
+_______
 TODO:
 * Include angularjs & jquery
 * Enquiries entity & admin
@@ -38,12 +44,9 @@ TODO:
 * User sign in logs
 * Header nav bar : contact, register, login user | hello user
 * footer - TOS link, contact link, copyright message
-* Enquiry form with captcha & contact details page & fixture 
-* TOS page fixture
+* Enquiry form with captcha & contact details page
 * OrnicarGravatarBundle
 * OroCRM ? 
-* GenemuFormBundle
 * IgorwFileServeBundle
-* APYJsFormValidationBundle
 * FpJsFormValidatorBundle ?
 * SpyTimelineBundle ?
