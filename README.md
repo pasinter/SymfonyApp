@@ -50,3 +50,12 @@ TODO:
 * IgorwFileServeBundle
 * FpJsFormValidatorBundle ?
 * SpyTimelineBundle ?
+* avro/translator-bundle ?
+* willdurand/js-translation-bundle
+* JMSI18nRoutingBundle 
+* SonataTranslationBundle  ?
+* a2lix/translation-form-bundle ?
+* knplabs/doctrine-behaviors
+* prezent/doctrine-translatable-bundle ?
+* ArgentumTranslationBundle ?
+* LexikTranslationBundle ?
