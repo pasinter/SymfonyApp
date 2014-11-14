@@ -52,9 +52,12 @@ class AppKernel extends Kernel
             // Doctrine behaviours
             new Stof\DoctrineExtensionsBundle\StofDoctrineExtensionsBundle(),
 
-            // locale
+            // I18N
             new Lunetics\LocaleBundle\LuneticsLocaleBundle(),
-
+            new JMS\I18nRoutingBundle\JMSI18nRoutingBundle(),
+            new JMS\TranslationBundle\JMSTranslationBundle(),
+            
+            
             // Security
             new JMS\AopBundle\JMSAopBundle(),
             new JMS\SecurityExtraBundle\JMSSecurityExtraBundle(),

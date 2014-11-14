@@ -308,3 +308,8 @@ sonata_media:
     providers:
         image:
             resizer: sonata.media.resizer.square
+            
+jms_i18n_routing:
+    default_locale: en
+    locales: [en, fr]
+    strategy: prefix
