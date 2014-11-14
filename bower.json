@@ -1,0 +1,9 @@
+{
+    "name": "RESTful Symfony Edition",
+    "version": "0.1.0",
+    "appPath": "web",
+    "dependencies": {
+        "angular": "~1.2.6",
+        "restangular": "1.4.0"
+    }
+}

@@ -13,4 +13,5 @@
 /nbproject/private/
 /nbproject
 /src/Pasinter/CoreBundle/Entity/*.php~
-composer.lock
+/composer.lock
+/web/bower_components/*

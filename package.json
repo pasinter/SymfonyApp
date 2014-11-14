@@ -1,0 +1,12 @@
+{
+    "name": "RESTful Symfony Edition",
+    "version": "0.1.0",
+    "description": "RESTful Symfony Edition",
+    "authors": [
+        {
+            "name": "Ken Golovin",
+            "homepage": "https://github.com/pasinter"
+        }
+    ],
+    "license": "MIT"
+}
