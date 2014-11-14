@@ -432,3 +432,7 @@ sonata_seo:
             'xmlns:og':           http://opengraphprotocol.org/schema/
             #'xmlns:fb':           "http://www.facebook.com/2008/fbml"
             
+jms_i18n_routing:
+    default_locale: en
+    locales: [en, fr]
+    strategy: prefix

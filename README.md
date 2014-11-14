@@ -1,28 +1,41 @@
 Rad Symfony Edition
 ================
 
+Key assumptions:
+* AngularJS app
+* Site must support multiple locales
+* REST interface
+* CMS out of the box
+* Social networks integration
+
 _______
 Pre-installed bundles
-* FOSUserBundle
-* FOSRestBundle
 * SonataAdminBundle
-* SonataMediaBundle
-* SonataUserBundle
-* SonataIntlBundle
-* KnpMenuBundle
 * KnpPaginatorBundle
 * JmsAopBundle
-* JmsSecurityExtraBundle
-* MopaBootstrapBundle
-* LiipImagineBundle
 * StofDoctrineExtensionsBundles
-* LuneticsLocaleBundle
-* JMSSerializerBundle
 * FOSMessageBundle
 * SonataClassificationBundle 
-* SonataMediaBundle 
-* GenemuFormBundle
-
+* REST :
+** FOSRestBundle
+** JMSSerializerBundle
+** NelmioApiDocBundle
+* I18N:
+** JMSI18nRoutingBundle
+** JMSTranslationBundle
+** LuneticsLocaleBundle
+** SonataIntlBundle
+* Security :
+** JmsSecurityExtraBundle
+** SonataUserBundle
+** FOSUserBundle
+* Imaging
+** SonataMediaBundle
+** LiipImagineBundle
+* Frontend dev
+** MopaBootstrapBundle
+** GenemuFormBundle
+** KnpMenuBundle
 ___
 Front End
 * Twitter Bootstrap & SASS
@@ -67,3 +80,11 @@ TODO:
 * ArgentumTranslationBundle ?
 * LexikTranslationBundle ?
 * Sitemap generation using SonataSeoBundle
+* SonataCommentBundle ?
+
+Later:
+* CMF CreateBundle
+
+
+Installation:
+* php app/console translation:extract en --enable-extractor=jms_i18n_routing
