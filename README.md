@@ -13,9 +13,11 @@ Pre-installed bundles
 * SonataAdminBundle
 * KnpPaginatorBundle
 * JmsAopBundle
-* StofDoctrineExtensionsBundles
 * FOSMessageBundle
 * SonataClassificationBundle 
+* Doctrine:
+** knplabs/doctrine-behaviors
+** StofDoctrineExtensionsBundles
 * REST :
 ** FOSRestBundle
 ** JMSSerializerBundle
@@ -68,7 +70,6 @@ TODO:
 * JMSI18nRoutingBundle 
 * SonataTranslationBundle  ?
 * a2lix/translation-form-bundle ?
-* knplabs/doctrine-behaviors
 * prezent/doctrine-translatable-bundle ?
 * ArgentumTranslationBundle ?
 * LexikTranslationBundle ?
