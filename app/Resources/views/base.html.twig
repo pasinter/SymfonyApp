@@ -1,7 +1,32 @@
 {% extends 'MopaBootstrapBundle::base.html.twig' %}
 
+
+{% block head_style %}
+<link href='//fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+<link href="//netdna.bootstrapcdn.com/bootswatch/3.0.3/cerulean/bootstrap.min.css" type="text/css" rel="stylesheet" media="screen" />
+
+{% stylesheets
+    '@PasinterFrontendBundle/Resources/public/css/style.css'
+%}
+<link href="{{ asset_url }}" type="text/css" rel="stylesheet" media="screen" />
+{% endstylesheets %}
+{% endblock head_style %}
+
 {% block title %}Symfony App{% endblock %}
 
+
+{% block navbar %}
+   
+{% embed '@MopaBootstrap/Navbar/navbar.html.twig' with { inverse: false, id: 'navbar-top' } %}
+    {% block brand %}
+        <a href="/" class="navbar-brand">AngularJS Symfony App Distribution</a>
+    {% endblock %}
+
+    {% block menu %}
+        {{ mopa_bootstrap_menu('PasinterFrontendBundle:Builder:mainMenu') }}
+    {% endblock %}
+{% endembed %}
+{% endblock navbar %}
 
 {% block headline %}AngularJS Symfony App Distribution{% endblock headline %}
 
