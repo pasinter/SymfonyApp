@@ -75,7 +75,7 @@ class Message extends BaseMessage
      * @param \Pasinter\CoreBundle\Entity\Thread $thread
      * @return Message
      */
-    public function setThread(\Pasinter\CoreBundle\Entity\Thread $thread = null)
+    public function setThread(\FOS\MessageBundle\Model\ThreadInterface $thread = null)
     {
         $this->thread = $thread;
 
@@ -98,7 +98,7 @@ class Message extends BaseMessage
      * @param \Pasinter\CoreBundle\Entity\User $sender
      * @return Message
      */
-    public function setSender(\Pasinter\CoreBundle\Entity\User $sender = null)
+    public function setSender(\FOS\MessageBundle\Model\ParticipantInterface $sender = null)
     {
         $this->sender = $sender;
 

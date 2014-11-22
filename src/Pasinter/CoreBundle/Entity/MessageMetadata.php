@@ -57,7 +57,7 @@ class MessageMetadata extends BaseMessageMetadata
      * @param \Pasinter\CoreBundle\Entity\Message $message
      * @return MessageMetadata
      */
-    public function setMessage(\Pasinter\CoreBundle\Entity\Message $message = null)
+    public function setMessage(\FOS\MessageBundle\Model\MessageInterface $message = null)
     {
         $this->message = $message;
 
@@ -80,7 +80,7 @@ class MessageMetadata extends BaseMessageMetadata
      * @param \Pasinter\CoreBundle\Entity\User $participant
      * @return MessageMetadata
      */
-    public function setParticipant(\Pasinter\CoreBundle\Entity\User $participant = null)
+    public function setParticipant(\FOS\MessageBundle\Model\ParticipantInterface $participant = null)
     {
         $this->participant = $participant;
 
