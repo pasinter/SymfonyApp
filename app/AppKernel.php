@@ -48,6 +48,7 @@ class AppKernel extends Kernel
             new Mopa\Bundle\BootstrapBundle\MopaBootstrapBundle(),
             new Knp\Bundle\PaginatorBundle\KnpPaginatorBundle(),
             new Knp\Bundle\MenuBundle\KnpMenuBundle(),
+            new Sp\BowerBundle\SpBowerBundle(),
 			
             // Doctrine behaviours
             new Stof\DoctrineExtensionsBundle\StofDoctrineExtensionsBundle(),

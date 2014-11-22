@@ -1,12 +1,25 @@
 {
-    "name": "RESTful Symfony Edition",
-    "version": "0.1.0",
-    "appPath": "web",
-    "dependencies": {
-        "angular": "~1.2.6",
-        "restangular": "1.4.0",
-        "sass-bootstrap": "~3.0.2",
-        "angular-bootstrap": "~0.10.0",
-        "requirejs": "~2.1.9"
-    }
+  "name": "RESTful Symfony Edition",
+  "version": "0.1.0",
+  "appPath": "web",
+  "dependencies": {
+    "angular": "~1.2.6",
+    "restangular": "1.4.0",
+    "sass-bootstrap": "~3.0.2",
+    "angular-bootstrap": "~0.10.0",
+    "requirejs": "~2.1.9"
+  },
+  "homepage": "https://github.com/pasinter/SymfonyApp",
+  "authors": [
+    "pasinter <ken.golovin@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "web/bower_components",
+    "test",
+    "tests"
+  ]
 }
