@@ -43,9 +43,11 @@
         "friendsofsymfony/message-bundle": "~1.2",
         "genemu/form-bundle": "~2.2",
         "sonata-project/classification-bundle": "~2.2",
-        "jms/i18n-routing-bundle": "~1.1",
-        "knplabs/doctrine-behaviors": "~1.0"
-		
+        "knplabs/doctrine-behaviors": "~1.0",
+        "thomaspark/bootswatch": "~3.3",
+        "sp/bower-bundle": "~0.11",
+        "jms/i18n-routing-bundle": "~1.1"
+        	
 		
 		
     },

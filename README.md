@@ -38,6 +38,8 @@ Pre-installed bundles
 ** MopaBootstrapBundle
 ** GenemuFormBundle
 ** KnpMenuBundle
+** thomaspark/bootswatch
+** SpBowerBundle
 ___
 Front End
 * Twitter Bootstrap & SASS
