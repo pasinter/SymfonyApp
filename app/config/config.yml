@@ -172,6 +172,7 @@ lunetics_locale:
   cookie:
     set_on_change: true
     ttl: 300000
+  guessing_excluded_pattern: ^/api
 
 jms_security_extra:
   expressions: true
@@ -309,7 +310,9 @@ sonata_media:
         image:
             resizer: sonata.media.resizer.square
             
-jms_i18n_routing:
-    default_locale: en
-    locales: [en, fr]
-    strategy: prefix
+#jms_i18n_routing:
+#    default_locale: en
+#    locales: [en, fr]
+#    strategy: prefix
+    
+    

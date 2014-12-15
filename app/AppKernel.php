@@ -39,6 +39,7 @@ class AppKernel extends Kernel
             new Pasinter\Sonata\UserBundle\PasinterSonataUserBundle(),
             new Pasinter\Sonata\MediaBundle\PasinterSonataMediaBundle(),
 
+            // API
             new Nelmio\ApiDocBundle\NelmioApiDocBundle(),
             
             // images
@@ -55,7 +56,7 @@ class AppKernel extends Kernel
 
             // I18N
             new Lunetics\LocaleBundle\LuneticsLocaleBundle(),
-            new JMS\I18nRoutingBundle\JMSI18nRoutingBundle(),
+//            new JMS\I18nRoutingBundle\JMSI18nRoutingBundle(),
             new JMS\TranslationBundle\JMSTranslationBundle(),
             
             

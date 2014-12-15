@@ -1,27 +1,41 @@
 pasinter_api:
     resource: "@PasinterApiBundle/Controller/"
     type:     annotation
-    prefix:   /
+    prefix:   /{_locale}
+    requirements:
+        _locale: "(en|fr)"
+
+pasinter_homepage:
+    pattern:  /
+    defaults: { _controller: PasinterFrontendBundle:Home:index, _locale : en }
 
 pasinter_account:
     resource: "@PasinterAccountBundle/Controller/"
     type:     annotation
-    prefix:   /
+    prefix:   /{_locale}
+    requirements:
+        _locale: "(en|fr)"
 
 pasinter_core:
     resource: "@PasinterCoreBundle/Controller/"
     type:     annotation
-    prefix:   /
+    prefix:   /{_locale}
+    requirements:
+        _locale: "(en|fr)"
 
 pasinter_backend:
     resource: "@PasinterBackendBundle/Controller/"
     type:     annotation
-    prefix:   /
+    prefix:   /{_locale}
+    requirements:
+        _locale: "(en|fr)"
 
 pasinter_frontend:
     resource: "@PasinterFrontendBundle/Controller/"
     type:     annotation
-    prefix:   /
+    prefix:   /{_locale}
+    requirements:
+        _locale: "(en|fr)"
 
 
 sonata_user_security:
@@ -78,3 +92,4 @@ _sonata_admin:
     resource: .
     type: sonata_admin
     prefix: /admin
+    
