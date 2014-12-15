@@ -37,7 +37,7 @@ class Message extends BaseMessage
     protected $thread;
 
     /**
-     * @ORM\ManyToOne(targetEntity="Pasinter\CoreBundle\Entity\User")
+     * @ORM\ManyToOne(targetEntity="Pasinter\Sonata\UserBundle\Entity\User")
      * @var \FOS\MessageBundle\Model\ParticipantInterface
      */
     protected $sender;
@@ -95,7 +95,7 @@ class Message extends BaseMessage
     /**
      * Set sender
      *
-     * @param \Pasinter\CoreBundle\Entity\User $sender
+     * @param \Pasinter\Sonata\UserBundle\Entity\User $sender
      * @return Message
      */
     public function setSender(\FOS\MessageBundle\Model\ParticipantInterface $sender = null)
@@ -108,7 +108,7 @@ class Message extends BaseMessage
     /**
      * Get sender
      *
-     * @return \Pasinter\CoreBundle\Entity\User 
+     * @return \Pasinter\Sonata\UserBundle\Entity\User 
      */
     public function getSender()
     {

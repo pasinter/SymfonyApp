@@ -36,7 +36,7 @@ class ThreadMetadata extends BaseThreadMetadata
     protected $thread;
 
     /**
-     * @ORM\ManyToOne(targetEntity="Pasinter\CoreBundle\Entity\User")
+     * @ORM\ManyToOne(targetEntity="Pasinter\Sonata\UserBundle\Entity\User")
      * @var \FOS\MessageBundle\Model\ParticipantInterface
      */
     protected $participant;
@@ -77,7 +77,7 @@ class ThreadMetadata extends BaseThreadMetadata
     /**
      * Set participant
      *
-     * @param \Pasinter\CoreBundle\Entity\User $participant
+     * @param \Pasinter\Sonata\UserBundle\Entity\User $participant
      * @return ThreadMetadata
      */
     public function setParticipant(\FOS\MessageBundle\Model\ParticipantInterface $participant = null)
@@ -90,7 +90,7 @@ class ThreadMetadata extends BaseThreadMetadata
     /**
      * Get participant
      *
-     * @return \Pasinter\CoreBundle\Entity\User 
+     * @return \Pasinter\Sonata\UserBundle\Entity\User 
      */
     public function getParticipant()
     {

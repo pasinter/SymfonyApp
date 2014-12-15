@@ -30,7 +30,7 @@ class Thread extends BaseThread
     protected $id;
 
     /**
-     * @ORM\ManyToOne(targetEntity="Pasinter\CoreBundle\Entity\User")
+     * @ORM\ManyToOne(targetEntity="Pasinter\Sonata\UserBundle\Entity\User")
      * @var \FOS\MessageBundle\Model\ParticipantInterface
      */
     protected $createdBy;
