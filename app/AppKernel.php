@@ -34,10 +34,10 @@ class AppKernel extends Kernel
             new Sonata\MediaBundle\SonataMediaBundle(),
             new Sonata\ClassificationBundle\SonataClassificationBundle(),
             
-            new Application\Sonata\ClassificationBundle\ApplicationSonataClassificationBundle(),
+            new Pasinter\Sonata\ClassificationBundle\PasinterSonataClassificationBundle(),
             
-            new Application\Sonata\UserBundle\ApplicationSonataUserBundle(),
-            new Application\Sonata\MediaBundle\ApplicationSonataMediaBundle(),
+            new Pasinter\Sonata\UserBundle\PasinterSonataUserBundle(),
+            new Pasinter\Sonata\MediaBundle\PasinterSonataMediaBundle(),
 
             new Nelmio\ApiDocBundle\NelmioApiDocBundle(),
             
